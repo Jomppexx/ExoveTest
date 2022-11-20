@@ -1,0 +1,33 @@
+As helpful tools I used Narrator screenreader and the tab key.
+
+Changes:
+Deleted h3 style. There were 2 stylings for h3.
+
+Added alt text for the first img, improving accessibility.
+
+Fixed typo "...promises to work flexibility and support..." --> flexibly
+
+Change for="tetx" to description to match labelledby of input.
+	<label for="description">Name</label>
+	<input name="text" type="text" aria-labelledby="description"></input>
+
+"Insert your first name and last name" moved above input field. More logical reading order for users.
+
+Added for="javascript" to JavaScript radio button label. Screenreader now reads name of the button and it can be selected by clicking the text.
+
+Deleted the following lines:
+  <fieldset class="column column-first">
+  <fieldset class="column column-second">
+They seem to do absolutely nothing and are nested fieldsets. Fieldsets are for containing input options.
+
+Visually hidden column first and column second legends removed. visually-hidden class no longer used, so removed.
+
+Web accessibility checkbox input fixed. Changes: id="web", value="web".
+
+Added for="colors" to <label>Choose a color:</label>
+
+Changed alt text of second image to something that better describes it.
+
+Tabindex of footer link changed to 0. This way going through the page with tab finds the link before the browser tools.
+
+Changed aria-label of FLEXOVE and TECH-XOVE link. More screen-reader friendly.

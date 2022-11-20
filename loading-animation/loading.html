@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="loading.js"></script>
+<style>
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animationcontainer{
+  width: 400px;
+  height: 50px;
+  outline: solid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.spinnerBorder {
+  width: 10em;
+  height: 10em;
+  border-top: 1em solid teal;
+  border-right: 1em solid transparent;
+  border-radius: 60%;
+  margin: auto;
+  animation: spin linear infinite;
+  animation-duration: 3s;
+}
+
+.spinnerDot {
+  width: 1em;
+  height: 1em;
+  background-color: teal;
+  border-radius: 50%;
+  margin-left: 8.55em;
+  margin-top: 0.5em;
+}
+
+@keyframes spin{
+  100%{transform:rotate(360deg)}
+}
+
+@keyframes move{
+  from {left: 0px;}
+  to {left: 360px;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Loading animation</h1>
+  <div class="spinnerBorder" id="spinnerBorder">
+    <div class="spinnerDot" id="spinnerDot"></div>
+  </div>
+  <div style="margin:10px"></div>
+  <button onclick="changeColour()" id="colourButton">Change colour</button>
+  <button onclick="changeSize()" id="sizeButton">Change size</button>
+  <button onclick="changeSpeed()" id="speedButton">Change speed</button>
+</div>
+
+
+</body>
+</html>
+
+

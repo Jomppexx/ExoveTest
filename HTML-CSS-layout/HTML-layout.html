@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mainHeader {
+        background-color: #f3f3f3;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+      }
+
+      .gridContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1%;
+      }
+
+      .column {
+        padding-left: 6%;
+        padding-right: 5%;
+        background-color: #f3f3f3;
+        float: left;
+      }
+
+      footer {
+        background-color: #f3f3f3;
+        margin-top: 1%;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      }
+
+      @media screen and (max-width: 960px) {
+        .gridContainer {
+          grid-template-columns: auto auto;
+        }
+        footer{
+            margin-top: 2%;
+        }
+      }
+
+      @media screen and (max-width: 650px){
+        footer{
+            margin-top:5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mainHeader">News Site</h1>
+      <div class="gridContainer">
+        <div class="column">
+          <h2>Item Heading 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
+            sed enim ut sem viverra aliquet eget sit amet. Proin nibh nisl
+            condimentum id venenatis a condimentum vitae. Nisi porta lorem
+            mollis aliquam ut porttitor leo a diam.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Item Heading 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod
+            quis viverra nibh cras pulvinar mattis nunc sed. Dui nunc mattis
+            enim ut tellus. Vel turpis nunc eget lorem dolor sed viverra ipsum.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Item Heading 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod
+            quis viverra nibh cras pulvinar mattis nunc sed. Dui nunc mattis
+            enim ut tellus. Vel turpis nunc eget lorem dolor sed viverra ipsum.
+          </p>
+        </div>
+      </div>
+      <footer><h3>ⓒ News site</h3></footer>
+    </div>
+  </body>
+</html>
